@@ -25,9 +25,12 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="w-screen h-screen bg-first">
-      <div className="mt-16">
-        <h1 className="text-2xl font-bold text-white text-center mb-6">
+    <div className=" bg-first mt-12 pb-12">
+      <div>
+        <h1
+          className="text-2xl font-bold text-white text-center mb-6 p-5"
+          id="projects"
+        >
           My Projects
         </h1>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
@@ -41,7 +44,7 @@ const Projects = () => {
                 <p>
                   <a href={project.url} target="_blank" alt="">
                     {" "}
-                    <Button className="text-white uppercase border border-second p-3 rounded-2xl bg-first font-bold">
+                    <Button className="text-white uppercase border border-second p-3 rounded-full bg-first font-bold">
                       Live Site
                     </Button>
                   </a>

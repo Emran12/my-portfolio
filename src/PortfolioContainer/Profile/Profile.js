@@ -4,7 +4,7 @@ import Typical from "react-typical";
 import img from "../Profile/profilepic.png";
 const Profile = () => {
   return (
-    <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-10 mt-12">
+    <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-10 mt-12 bg-first sm:pb-5">
       <div className="pl-24 pt-12">
         <h1 className="text-2xl">I'm Mohammad Emran Hossain</h1>
         <h1 className="text-3xl text-second font-bold mb-6 pt-3">
@@ -22,14 +22,11 @@ const Profile = () => {
             ]}
           ></Typical>
         </h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum vel
-          veritatis repellat quisquam, doloribus facere minima laboriosam. In,
-        </p>
+
         <p className="mt-12">
           <a href="resume.pdf" download="emran hossain" alt="">
             {" "}
-            <Button className="text-white uppercase border border-second p-3 rounded-2xl">
+            <Button className="text-white uppercase border border-second p-3 rounded-full">
               download resume
             </Button>
           </a>
