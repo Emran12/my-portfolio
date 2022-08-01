@@ -1,11 +1,10 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 import Typical from "react-typical";
 import img from "../Profile/profilepic.png";
 const Profile = () => {
   return (
-    <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-10 mt-12 bg-first sm:pb-5">
-      <div className="pl-24 pt-12">
+    <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-10  sm:pb-5">
+      <div className="pl-24">
         <h1 className="text-2xl">I'm Mohammad Emran Hossain</h1>
         <h1 className="text-3xl text-second font-bold mb-6 pt-3">
           <Typical
@@ -26,9 +25,9 @@ const Profile = () => {
         <p className="mt-12">
           <a href="resume.pdf" download="emran hossain" alt="">
             {" "}
-            <Button className="text-white uppercase border border-second p-3 rounded-full">
+            <button className="text-white uppercase border border-second p-3 rounded-full">
               download resume
-            </Button>
+            </button>
           </a>
         </p>
       </div>

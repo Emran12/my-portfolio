@@ -26,9 +26,9 @@ const ContactMe = () => {
     e.target.reset();
   };
   return (
-    <div className="bg-first" id="contactme">
+    <div  id="contactme">
       <h1 className="text-center text-3xl pt-5">Contact Me</h1>
-      <div className="mt-24 grid lg:grid-cols-2 sm:grid-cols-1 gap-5">
+      <div className="mt-20 flex flex-wrap justify-evenly space-x-5">
         <div className="text-center p-3">
           <p className="pb-3">Lets Keep in Touch</p>
           <img className="pl-24" src={network} alt="" />
@@ -40,7 +40,7 @@ const ContactMe = () => {
             onSubmit={sendEmail}
           >
             <input
-              className="h-12 text-first"
+              className="h-12 text-first w-auto"
               type="text"
               name="name"
               id=""

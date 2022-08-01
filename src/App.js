@@ -11,9 +11,6 @@ function App() {
     <div className="bg-first text-white">
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Home></Home>}>
-          {" "}
-        </Route>
         <Route exact path="/home" element={<Home></Home>}></Route>
         <Route path="/profile" element={<Profile></Profile>}></Route>
         <Route path="/aboutme" element={<AboutMe></AboutMe>}></Route>
