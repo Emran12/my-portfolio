@@ -3,7 +3,7 @@ import Typical from "react-typical";
 import img from "../Profile/profilepic.png";
 const Profile = () => {
   return (
-    <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-10  sm:pb-5">
+    <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-10  sm:pb-5 pt-10">
       <div className="pl-24">
         <h1 className="text-2xl">I'm Mohammad Emran Hossain</h1>
         <h1 className="text-3xl text-second font-bold mb-6 pt-3">
@@ -13,8 +13,6 @@ const Profile = () => {
               "Junior Front-end Developer",
               1500,
               "Junior Full Stack Developer",
-              1500,
-              "Junior Mern Stack Developer",
               1500,
               "Junior Back-end Developer ",
               1500,

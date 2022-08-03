@@ -5,7 +5,7 @@ import Projects from "../Projects/Projects";
 
 const Home = () => {
   return (
-    <div className="w-screen h-screen bg-first">
+    <div className="bg-first">
       <Profile></Profile>
       <Projects></Projects>
       <ContactMe></ContactMe>
