@@ -31,59 +31,55 @@ const ContactMe = () => {
   return (
     <div  id="contactme">
       <h1 className="text-center text-3xl pt-5">Contact Me</h1>
-      <div className="mt-20 flex flex-wrap justify-evenly space-x-5">
+      <div className="mt-20 flex flex-wrap justify-evenly">
         <div className="text-center p-3">
-          <p className="pb-3">Lets Keep in Touch</p>
-          <div>
-            <img src={gmail} className="w-14 h-14"></img>
-            <p>Gmail</p>
+          <div className="flex items-center mb-6" >
+            <img src={gmail} className="w-14 h-14 rounded mr-4"></img>
+            <p>emran.hossain0695@gmail.com</p>
           </div>
-          <div>
-            <img src={whatsApp} className="w-14 h-14"></img>
-            <p>WhatsApp</p>
+          <div className="flex items-center mb-6 ">
+            <img src={whatsApp} className="w-14 h-14 rounded mr-4"></img>
+            <p>+880 1687929238</p>
           </div>
-          <div>
-            <img src={linkedIn} className="w-14 h-14"></img>
-            <p>LinkedIn</p>
+          <div className="flex items-center mb-6" >
+            <img src={linkedIn} className="w-14 h-14 rounded mr-4"></img>
+            <a href="https://www.linkedin.com/in/emran-hossain95/" target="_blank">LinkedIn</a>
           </div>
-          <div>
+          <div className="flex items-center mb-6" >
             <img src={fb} className="w-14 h-14"></img>
-            <p>Facebook</p>
+            <a href="https://www.facebook.com/profile.php?id=100010072651709"  target="_blank">facebook</a>
           </div>
         </div>
         <div className="mb-12">
           <form
-            className="grid grid-cols-1 gap-5 "
+            className="flex flex-col space-y-5"
             ref={form}
             onSubmit={sendEmail}
           >
             <input
-              className="h-12 text-first w-auto"
+              className="shadow appearance-none border rounded  py-2 px-5 text-black leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               name="name"
-              id=""
               placeholder="Enter Name"
               required
             />
             <input
-              className="h-12 text-first"
+              className="shadow appearance-none border rounded  py-2 px-5 text-black leading-tight focus:outline-none focus:shadow-outline"
               type="email"
               name="email"
-              id=""
               placeholder="Enter Email"
               required
             />
             <textarea
-              className="text-first"
+              className="shadow appearance-none border rounded  py-2 px-5 text-black leading-tight focus:outline-none focus:shadow-outline"
               name="message"
-              id=""
               cols="30"
               rows="10"
               placeholder="Your Message"
               required
             ></textarea>
             <input
-              className="border border-black w-fit uppercase p-3 rounded-full font-bold"
+              className="border rounded-xl uppercase  pl-8 pr-8 pt-2 pb-2 font-bold"
               type="submit"
               value="send message"
             />
