@@ -3,19 +3,17 @@ import Typical from "react-typical";
 import img from "../Profile/profilepic.png";
 const Profile = () => {
   return (
-    <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-10  sm:pb-5 pt-10">
-      <div className="pl-24">
+    <div className="flex flex-wrap justify-evenly pt-6">
+      <div className="flex flex-col items-center justify-center w-1/2">
         <h1 className="text-2xl">I'm Mohammad Emran Hossain</h1>
         <h1 className="text-3xl text-second font-bold mb-6 pt-3">
           <Typical
             loop={Infinity}
             steps={[
-              "Junior Front-end Developer",
-              1500,
               "Junior Full Stack Developer",
               1500,
-              "Junior Back-end Developer ",
-              1500,
+              "Junior Mern Stack Developer",
+              2500,
             ]}
           ></Typical>
         </h1>
@@ -29,9 +27,9 @@ const Profile = () => {
           </a>
         </p>
       </div>
-      <div className="pl-12">
+      <div className="p-12">
         <div className="avatar">
-          <div className="w-96 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+          <div className="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
             <img src={img} alt="" />
           </div>
         </div>
