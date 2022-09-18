@@ -1,14 +1,14 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./PortfolioContainer/Home/Home";
-import AboutMe from "./PortfolioContainer/AbouteMe/AboutMe";
-import ContactMe from "./PortfolioContainer/ContactMe/ContactMe";
-import Header from "./PortfolioContainer/Header/Header";
-import Profile from "./PortfolioContainer/Profile/Profile";
+import Home from "./components/Home/Home";
+import AboutMe from "./components/AboutMe/AboutMe";
+import ContactMe from "./components/ContactMe/ContactMe";
+import Header from "./components/Header/Header";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   return (
-    <div className="bg-first text-white">
+    <div className="">
       <Header></Header>
       <Routes>
         <Route exact path="/home" element={<Home></Home>}></Route>

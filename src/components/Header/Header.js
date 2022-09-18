@@ -2,10 +2,9 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import Home from "../Home/Home";
 
-
 const Header = () => {
   return (
-    <div className="bg-fourth h-14">
+    <div className="h-14">
       <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
@@ -27,19 +26,21 @@ const Header = () => {
                 </svg>
               </label>
             </div>
-            <div className="flex-1 px-2 mx-2">Portfolio</div>
+            <div className="flex-1 px-2 mx-2 hover:text-green-500 hover:rounded-md hover:border-green-300">
+              Portfolio
+            </div>
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal">
-                <li>
+                <li className="hover:text-green-500">
                   <Link to="#home">Home</Link>
                 </li>
-                <li>
-                  <Link to="#projects">Projects</Link>
-                </li>
-                <li>
+                <li className="hover:text-green-500">
                   <Link to="#aboutme">About Me</Link>
                 </li>
-                <li>
+                <li className="hover:text-green-500">
+                  <Link to="#projects">Projects</Link>
+                </li>
+                <li className="hover:text-green-500">
                   <Link to="#contactme">Contact Me</Link>
                 </li>
               </ul>
@@ -49,17 +50,17 @@ const Header = () => {
         </div>
         <div className="drawer-side">
           <label for="my-drawer-3" className="drawer-overlay"></label>
-          <ul className="menu p-4 overflow-y-auto w-80 ">
-            <li>
+          <ul className="menu p-4 overflow-y-auto w-80">
+            <li className="hover:text-green-500">
               <Link to="#home">Home</Link>
             </li>
-            <li>
-              <Link to="#projects">Projects</Link>
-            </li>
-            <li>
+            <li className="hover:text-green-500">
               <Link to="#aboutme">About Me</Link>
             </li>
-            <li>
+            <li className="hover:text-green-500">
+              <Link to="#projects">Projects</Link>
+            </li>
+            <li className="hover:text-green-500">
               <Link to="#contactme">Contact Me</Link>
             </li>
           </ul>

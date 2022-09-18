@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import fb from "../../images/fb.svg"
-import gmail from "../../images/gmail.svg"
-import linkedIn from "../../images/linkedIn.svg"
-import whatsApp from "../../images/whatsApp.svg"
+import fb from "../../images/fb.svg";
+import gmail from "../../images/gmail.svg";
+import linkedIn from "../../images/linkedIn.svg";
+import whatsApp from "../../images/whatsApp.svg";
 
 const ContactMe = () => {
   const form = useRef();
@@ -29,25 +29,41 @@ const ContactMe = () => {
     e.target.reset();
   };
   return (
-    <div  id="contactme">
-      <h1 className="text-center text-3xl pt-5">Contact Me</h1>
+    <div id="contactme">
+      <h1 className="text-center text-3xl pt-5 text-green-500">Contact Me</h1>
       <div className="mt-20 flex flex-wrap justify-evenly">
         <div className="text-center p-3">
-          <div className="flex items-center mb-6" >
+          <div className="flex items-center mb-6">
             <img src={gmail} className="w-14 h-14 rounded mr-4"></img>
             <p>emran.hossain0695@gmail.com</p>
           </div>
           <div className="flex items-center mb-6 ">
-            <img src={whatsApp} className="w-14 h-14 rounded mr-4"></img>
+            <img src={whatsApp} className="w-14 h-14 rounded mr-4" alt=""></img>
             <p>+880 1687929238</p>
           </div>
-          <div className="flex items-center mb-6" >
-            <img src={linkedIn} className="w-14 h-14 rounded mr-4"></img>
-            <a href="https://www.linkedin.com/in/emran-hossain95/" target="_blank">LinkedIn</a>
+          <div className="flex items-center mb-6">
+            <img
+              src={linkedIn}
+              className="w-14 h-14 rounded mr-4 "
+              alt=""
+            ></img>
+            <a
+              href="https://www.linkedin.com/in/emran-hossain95/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              LinkedIn
+            </a>
           </div>
-          <div className="flex items-center mb-6" >
-            <img src={fb} className="w-14 h-14"></img>
-            <a href="https://www.facebook.com/profile.php?id=100010072651709"  target="_blank">facebook</a>
+          <div className="flex items-center mb-6">
+            <img src={fb} className="w-14 h-14" alt=""></img>
+            <a
+              href="https://www.facebook.com/profile.php?id=100010072651709"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              facebook
+            </a>
           </div>
         </div>
         <div className="mb-12">

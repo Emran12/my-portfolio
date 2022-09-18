@@ -1,4 +1,3 @@
-
 import React from "react";
 import project1 from "../../images/project1.PNG";
 import project2 from "../../images/project2.PNG";
@@ -27,10 +26,10 @@ const Projects = () => {
   ];
 
   return (
-    <div className=" pb-12">
+    <div className="pb-12 mt-10">
       <div>
         <h1
-          className="text-2xl font-bold text-white text-center mb-6 p-5"
+          className="text-3xl font-bold text-center text-green-500 mb-6 p-5"
           id="projects"
         >
           My Projects
@@ -39,14 +38,14 @@ const Projects = () => {
           {data.map((project) => (
             <div className="card w-96 bg-base-100 shadow-xl">
               <figure>
-                <img  src={project.img} style={{ height: "300px" }} alt="" />
+                <img src={project.img} style={{ height: "300px" }} alt="" />
               </figure>
               <div className="card-body text-center">
                 <h2 className="card-title text-second">{project.title}</h2>
                 <p>
                   <a href={project.url} target="_blank" alt="">
                     {" "}
-                    <button className="text-white uppercase border border-second p-3 rounded-full bg-second font-bold">
+                    <button className=" uppercase border border-second p-3 rounded-full font-bold text-white bg-lime-500 hover:bg-green-600">
                       Live Site
                     </button>
                   </a>
