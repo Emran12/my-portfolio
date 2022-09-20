@@ -27,7 +27,7 @@ const Header = () => {
               </label>
             </div>
             <div className="flex-1 px-2 mx-2 hover:text-green-500 hover:rounded-md hover:border-green-300">
-              Portfolio
+              Emran Hossain
             </div>
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal">
@@ -39,6 +39,9 @@ const Header = () => {
                 </li>
                 <li className="hover:text-green-500">
                   <Link to="#projects">Projects</Link>
+                </li>
+                <li className="hover:text-green-500">
+                  <Link to="#skills">Skills</Link>
                 </li>
                 <li className="hover:text-green-500">
                   <Link to="#contactme">Contact Me</Link>
@@ -59,6 +62,9 @@ const Header = () => {
             </li>
             <li className="hover:text-green-500">
               <Link to="#projects">Projects</Link>
+            </li>
+            <li className="hover:text-green-500">
+              <Link to="#skills">Skills</Link>
             </li>
             <li className="hover:text-green-500">
               <Link to="#contactme">Contact Me</Link>

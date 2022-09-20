@@ -29,8 +29,10 @@ const ContactMe = () => {
     e.target.reset();
   };
   return (
-    <div id="contactme">
-      <h1 className="text-center text-3xl pt-5 text-green-500">Contact Me</h1>
+    <div id="contactme" className="mt-10">
+      <h1 className="text-center text-3xl pt-5 text-green-500 font-bold">
+        Contact Me
+      </h1>
       <div className="mt-20 flex flex-wrap justify-evenly">
         <div className="text-center p-3">
           <div className="flex items-center mb-6">

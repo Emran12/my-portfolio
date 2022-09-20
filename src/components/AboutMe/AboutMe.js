@@ -3,9 +3,14 @@ import programmer from "../../images/programmer.jpg";
 
 const AboutMe = () => {
   return (
-    <div className="grid sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-2 gap-5 items-center mt-5">
+    <div
+      className="grid sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-2 gap-5 items-center mt-5"
+      id="aboutme"
+    >
       <div className="pl-10 pr-10">
-        <h1 className="text-center text-3xl text-green-500 ">About Me</h1>
+        <h1 className="text-center text-3xl text-green-500 font-bold">
+          About Me
+        </h1>
         <p className="tracking-wide mt-16">
           A passionate MERN stack developer and a problem solver. I am highly
           skilled with HTML, CSS, Bootstrap, Tailwind CSS, JS, and React JS, and
