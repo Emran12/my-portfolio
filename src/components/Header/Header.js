@@ -26,7 +26,7 @@ const Header = () => {
                 </svg>
               </label>
             </div>
-            <div className="flex-1 px-2 mx-2 hover:text-green-500 hover:rounded-md hover:border-green-300">
+            <div className="font-mono flex-1 px-2 mx-2 hover:text-green-500 hover:rounded-md hover:border-green-300">
               Emran Hossain
             </div>
             <div className="flex-none hidden lg:block">

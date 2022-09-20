@@ -13,10 +13,10 @@ const ContactMe = () => {
 
     emailjs
       .sendForm(
-        "service_rr46bg5",
-        "template_qov3oop",
+        "service_bcthhvh",
+        "template_8ice7fl",
         form.current,
-        "V_BYvZ-rPpVtRHJzC"
+        "R0TgQ1MV9PGulR8db"
       )
       .then(
         (result) => {
@@ -70,14 +70,14 @@ const ContactMe = () => {
         </div>
         <div className="mb-12">
           <form
-            className="flex flex-col space-y-5"
             ref={form}
             onSubmit={sendEmail}
+            className="flex flex-col space-y-5"
           >
             <input
               className="shadow appearance-none border rounded  py-2 px-5 text-black leading-tight focus:outline-none focus:shadow-outline"
               type="text"
-              name="name"
+              name="user_name"
               placeholder="Enter Name"
               required
             />
@@ -97,7 +97,7 @@ const ContactMe = () => {
               required
             ></textarea>
             <input
-              className="border rounded-xl uppercase  pl-8 pr-8 pt-2 pb-2 font-bold"
+              className="border rounded-xl uppercase  pl-8 pr-8 pt-2 pb-2 font-bold text-white bg-lime-700 hover:bg-green-600"
               type="submit"
               value="send message"
             />
